@@ -47,11 +47,15 @@ screenshots:
 ![5](https://github.com/user-attachments/assets/f269b885-4cb0-4eba-8ca6-d9e7d7130bea)
 ![6](https://github.com/user-attachments/assets/a5c02ce1-5964-4ea0-b59b-0d10d4e4b6b5)
 ![7](https://github.com/user-attachments/assets/344f4865-56e9-4176-9555-8e3742637ddb)
-![11](https://github.com/user-attachments/assets/f63927ec-a964-4393-bdf8-0aa1f66c2417)
 ![10](https://github.com/user-attachments/assets/683a2728-6ebd-4dcd-8db8-59079a321b0b)
 ![9](https://github.com/user-attachments/assets/5ff56096-7600-4227-becb-22fc314fe197)
 ![8](https://github.com/user-attachments/assets/c14dfb57-ca7f-4213-890c-a408b85bf57e)
 ![12](https://github.com/user-attachments/assets/567dc70d-32e5-4018-bff8-63499967c194)
+
+
+<span style="font-size: medium;"><b>Ability to zoom in on images and download them to the device:</b></span>
+
+![11](https://github.com/user-attachments/assets/f63927ec-a964-4393-bdf8-0aa1f66c2417)
 ![13](https://github.com/user-attachments/assets/dac1287a-fecc-400c-b90a-8853302e8d22)
 ![14](https://github.com/user-attachments/assets/21ada5fe-7172-41ba-a65e-98c37ece65c0)
 ![16](https://github.com/user-attachments/assets/b1272e1f-9c98-41f1-8e8f-92780cd0bafc)
