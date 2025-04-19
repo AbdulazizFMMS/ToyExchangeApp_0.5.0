@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_positive_round"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/imageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Hesabınızı Silmek istiyor musunz"
+        android:textColor="#F10505"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+<!--    <EditText-->
+<!--        android:drawableEnd="@drawable/baseline_edit_24"-->
+<!--        android:hint="Acil mesajını yazınız"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:id="@+id/tv_diaogarkadas"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginTop="14dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        android:layout_marginBottom="12dp"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+<LinearLayout
+    android:visibility="gone"
+    android:id="@+id/layoutacil"
+    android:layout_margin="15dp"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView"
+    >
+
+    <TextView
+        android:editable="false"
+        android:text=""
+        android:textColorHint="@color/color_white"
+        android:id="@+id/et_diaogacil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="12dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        tools:ignore="Deprecated" />
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2acil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutacil">
+
+        <TextView
+            android:id="@+id/Text_diaogacil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:editable="false"
+            android:text="Bu hesabı sildikten sonra, bilgileriniz bir daha erişilemeyecektir. Hesabınızı silmek istediğinizden emin misiniz?"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/color_white"
+            android:textSize="14sp"
+            tools:ignore="Deprecated" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        android:text="Evet"
+        style="@style/MaterialButtonStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnDialog1"
+        app:layout_constraintTop_toBottomOf="@+id/layoutacil" />
+    <Button
+        android:id="@+id/btnDialog1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="15dp"
+        style="@style/MaterialButtonStyle"
+        android:text="iptal"
+        android:backgroundTint="@color/color_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnDialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layoutacil" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

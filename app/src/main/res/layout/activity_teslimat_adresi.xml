@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="#F0EEEE"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityTeslimatAdresi">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fitsSystemWindows="true"
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:expandedTitleMarginStart="5dp"
+            app:expandedTitleMarginEnd="5dp"
+            app:layout_scrollFlags="scroll|snap">
+
+            <androidx.cardview.widget.CardView
+                android:backgroundTint="@color/color_light_primary"
+                android:layout_marginBottom="-15dp"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/image_back_teslimat"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/baseline_arrow_back_ios_new_24"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teslimat Adresi"
+                        android:textColor="@color/color_white"
+                        android:textSize="16sp"/>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Adresi silmek için Adrese Basılı tutularak listeden silebilirsin ekleyebilirsin."
+        app:layout_constraintBottom_toTopOf="@+id/recyclerarkadasliste1"
+        app:layout_constraintEnd_toEndOf="parent"
+
+         />
+
+    <Button
+        android:id="@+id/btn_konum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_button_backgorund"
+        android:drawableLeft="@drawable/baseline_my_location_24"
+        android:shadowColor="#090909"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="8"
+        android:text="Mevcut Konumu Kullan"
+        android:textColor="@color/color_white" />
+
+    <Button
+        android:id="@+id/btn_adres_ekle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_button_backgorund"
+        android:drawableLeft="@drawable/baseline_add_24"
+        android:shadowColor="#090909"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="8"
+        android:text="Yeni Adres Ekle" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#F0EEEE"
+        android:id="@+id/recyclerarkadasliste1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/RVemptyText1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:textColor="@color/color_black"
+        android:shadowColor="#090909"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="8"
+        android:text="Yeni adresleri ekleyebilirsin"
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

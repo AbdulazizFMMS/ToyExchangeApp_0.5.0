@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YeniRekalm.YeniReklamActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burdan yeni ürününüzü ekleyin." />
+
+        <TextView
+            android:id="@+id/text_resim0_10"
+            android:textStyle="bold"
+            android:textColor="@color/color_red"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resim 0/10 yüklendi" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_yukle1"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/baseline_add_photo_alternate_24">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_yukle2"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:src="@drawable/add_24_green">
+            </ImageView>
+            <ImageView
+                android:id="@+id/img_yukle3"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_24_green">
+            </ImageView>
+            <ImageView
+                android:id="@+id/img_yukle4"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_24_green">
+            </ImageView>
+            <ImageView
+                android:id="@+id/img_yukle5"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_24_green">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_yukle6"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_24_green">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_yukle7"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_24_green">
+            </ImageView>
+            <ImageView
+                android:id="@+id/img_yukle8"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_24_green">
+            </ImageView>
+            <ImageView
+                android:id="@+id/img_yukle9"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_24_green">
+            </ImageView>
+            <ImageView
+                android:id="@+id/img_yukle10"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_24_green">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_yukle11"
+                android:layout_marginStart="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/add_24_green">
+            </ImageView>
+
+        </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <EditText
+            android:id="@+id/et_ilan_basligi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_only_stroks"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:hint="*İlan Başlığı"
+            android:drawablePadding="7dp"
+            android:textColor="@color/color_black"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+
+                android:gravity="top"
+                android:id="@+id/et_detay"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/shape_only_stroks"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:hint="İlan Detayları..."
+                android:textColor="@color/color_black"/>
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:drawableStart="@drawable/phone_iphone_24"
+            android:id="@+id/et_telefon"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/shape_only_stroks"
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            android:hint="telefon Numarası (optional)"
+            android:textColor="@color/color_black"/>
+
+        <EditText
+            android:drawableStart="@drawable/location_on_24"
+            android:id="@+id/et_konum"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/shape_only_stroks"
+            android:layout_marginTop="5dp"
+            android:padding="7dp"
+            android:hint="konum (optional)"
+            android:textColor="@color/color_black"/>
+
+        <TextView
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Kategori Seç:"/>
+        <Spinner
+            android:background="@drawable/shape_only_stroks"
+            android:layout_marginTop="10dp"
+            android:id="@+id/spinneryenireklam"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            >
+
+        </Spinner>
+
+        <Button
+            android:background="@drawable/shape_button_backgorund"
+            android:id="@+id/btn_share_toy"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="Paylaş"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

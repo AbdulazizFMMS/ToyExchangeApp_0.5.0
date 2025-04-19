@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "183972593755",
+    "firebase_url": "https://projeh1-60d67-default-rtdb.firebaseio.com",
+    "project_id": "projeh1-60d67",
+    "storage_bucket": "projeh1-60d67.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183972593755:android:bfb9797c35df5c79d7bf7e",
+        "android_client_info": {
+          "package_name": "com.example.mlseriesdemonstrator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGH2A91UHXv3cVC_QgGgix8dCecRpeRxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183972593755:android:70f3a878030730e8d7bf7e",
+        "android_client_info": {
+          "package_name": "com.yigit.toyexchanger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGH2A91UHXv3cVC_QgGgix8dCecRpeRxM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

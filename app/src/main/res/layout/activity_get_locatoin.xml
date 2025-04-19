@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+
+    >
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout1111"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:fitsSystemWindows="true"
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:expandedTitleMarginStart="5dp"
+            app:expandedTitleMarginEnd="5dp"
+            app:layout_scrollFlags="scroll|snap">
+
+            <androidx.cardview.widget.CardView
+                android:backgroundTint="@color/color_light_primary"
+                android:layout_marginBottom="-15dp"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/realloca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:id="@+id/image_back_map"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_close"/>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Harita üzerinden Adres Ekle"
+                        android:textColor="@color/color_white"
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:layout_below="@+id/image_back_map"
+                        android:id="@+id/searchEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="14dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="14dp"
+                        android:hint="@string/search_hint_TR"
+                        android:drawableStart="@drawable/baseline_search_24"
+                        android:drawablePadding="10dp"
+                        android:textSize="14sp"
+                        android:padding="11dp"
+                        android:background="@drawable/search_background"
+                        android:inputType="text" />
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/image_back_map"
+                        android:id="@+id/image_exit_getloca"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/exit_icon_search"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+
+
+
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_below="@+id/appBarLayout1111"
+                    android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <fragment
+                    android:id="@+id/frame_layout"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    tools:context=".activities.GetLocatoinActivity" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_below="@+id/map_container"
+                        android:id="@+id/continueButton"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/color_white"
+                        android:background="@drawable/shape_button_backgorund"
+                        android:layout_gravity="center"
+                        android:text="Devam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+<!--            <Button-->
+<!--                android:layout_below="@+id/realtiv_get_locaa"-->
+<!--                android:id="@+id/continueButton"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                android:layout_marginEnd="10dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/color_white"-->
+<!--                android:background="@drawable/shape_button_backgorund"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="Devam"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+
+
+
+
+</RelativeLayout>

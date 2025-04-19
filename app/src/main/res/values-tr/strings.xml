@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Uygulama Bilgileri -->
+    <string name="app_name">Toyzer-Takas Alışveriş</string>
+    <string name="app_copyright">Telif Hakkı &#169; 2025 YIGIT Developer \n Tüm hakları saklıdır</string>
+    <string name="share_text">Bu uygulamayı seninle paylaşmak istiyorum. Buradan Google Play üzerinden indirebilirsin</string>
+
+    <!-- Alt menü isimleri -->
+    <string name="title_nav_home">Ana Sayfa</string>
+    <string name="title_nav_category">Kategori</string>
+    <string name="title_nav_favorite">Favoriler</string>
+    <string name="title_nav_hesab">Profilim</string>
+
+    <!-- Ana menü araç çubuğu -->
+    <string name="menu_more">Daha Fazla</string>
+    <string name="menu_overflow_settings">Ayarlar</string>
+    <string name="menu_overflow_rate_us">Bizi Oyla</string>
+    <string name="menu_overflow_more_apps">Diğer Uygulamalar</string>
+    <string name="menu_overflow_share">Paylaş</string>
+    <string name="menu_overflow_about">Hakkında</string>
+
+    <!-- Favoriler -->
+    <string name="msg_favorite_added">Favorilere eklendi</string>
+    <string name="msg_favorite_removed">Favorilerden kaldırıldı</string>
+    <string name="no_favorite_found">Favori listeniz boş çünkü henüz favorilere bir oyuncak eklemediniz.</string>
+
+    <!-- Yazı tipi boyutları -->
+    <string name="title_dialog_font_size">Yazı Tipi Boyutunu Seç</string>
+    <string name="font_size_xsmall">Ekstra Küçük</string>
+    <string name="font_size_small">Küçük</string>
+    <string name="font_size_medium">Orta</string>
+    <string name="font_size_large">Büyük</string>
+    <string name="font_size_xlarge">Ekstra Büyük</string>
+
+    <!-- Arama -->
+    <string name="title_menu_search">Ara</string>
+    <string name="search_hint">Ara&#8230;</string>
+    <string name="search_hint_TR">Sokağını veya posta kodunu ara&#8230;</string>
+
+    <!-- Ağ ve hata mesajları -->
+    <string name="whops">Üzgünüz!</string>
+    <string name="failed_title_text">Üzgünüz!</string>
+    <string name="failed_text">Ağınızda bir sorun var veya sunucu kullanılamıyor, lütfen daha sonra tekrar deneyin.</string>
+    <string name="no_category_found">Şu anda mevcut bir kategori görünmüyor.</string>
+    <string name="no_search_found">Arama sonucu bulunamadı! Aramaya devam etmek istiyorsanız, lütfen başka bir anahtar kelime girin.</string>
+    <string name="msg_no_item">Şu anda herhangi bir içerik bulunmamaktadır.</string>
+    <string name="msg_search_input">Aramaya başlamak için lütfen anahtar kelimelerinizi girin!</string>
+    <string name="btn_retry">TEKRAR DENE</string>
+    <string name="dialog_option_ok">TAMAM</string>
+
+    <!-- Ayarlar ve diğerleri -->
+    <string name="txt_title_settings">Ayarlar</string>
+    <string name="title_setting_theme">Koyu Mod</string>
+    <string name="sub_title_setting_theme">Göz sağlığı ve enerji tasarrufu için</string>
+    <string name="content_description">TODO</string>
+    <string name="title_setting_notification">Bildirimler</string>
+    <string name="sub_title_setting_notification">Bildirim ayarlarını yönet</string>
+    <string name="title_setting_clear_cache">Önbelleği Temizle</string>
+    <string name="sub_setting_clear_cache_start">Boşaltılacak</string>
+    <string name="sub_setting_clear_cache_end">alan</string>
+    <string name="title_setting_privacy">Gizlilik Politikası</string>
+    <string name="title_setting_rate">Bizi Oyla</string>
+    <string name="title_setting_more_apps">Diğer Uygulamalar</string>
+    <string name="title_setting_share">Paylaş</string>
+    <string name="title_setting_about">Hakkında</string>
+    <string name="msg_about_version">Sürüm</string>
+    <string name="title_menu_browser">Tarayıcıda Aç</string>
+    <string name="title_setting_display_recipes">Gönderileri Göster</string>
+    <string name="msg_clear_cache">Önbelleği temizlemek istediğinizden emin misiniz?</string>
+    <string name="msg_cache_cleared">Önbellek temizlendi</string>
+    <string name="option_menu_recipes_2_columns">2 Sütun</string>
+    <string name="option_menu_recipes_3_columns">3 Sütun</string>
+    <string name="option_yes">Evet</string>
+    <string name="option_cancel">İptal</string>
+    <string name="txt_related">Bunları da beğenebilirsiniz</string>
+    <string name="category_image_ratio">H,2:1</string>
+    <string name="txt_uncategorized">Kategorize Edilmemiş</string>
+
+    <!-- Yönlendirme (uygulama askıya alınırsa) -->
+    <string name="redirect_title">Yeni Uygulama Güncellemeleri</string>
+    <string name="redirect_message">Bu uygulama süresi dolmuş ve artık kullanılamaz. Aşağıdaki butona basarak en son güncellemeyi indirin ve yükleyin.</string>
+    <string name="redirect_button">Güncellemeyi Şimdi İndir</string>
+    <string name="redirect_error">Hata! URL ile ilgili bir sorun var, lütfen daha sonra tekrar deneyin.</string>
+
+    <!-- Kapatma penceresi -->
+    <string name="press_again_to_exit">Çıkmak için tekrar basın</string>
+    <string name="exit_message">Uygulamadan çıkmak istiyor musunuz?</string>
+    <string name="option_exit">Çıkış</string>
+
+</resources>

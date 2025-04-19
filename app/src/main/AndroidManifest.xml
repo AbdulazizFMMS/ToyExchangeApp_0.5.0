@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:name=".activities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+        <activity
+            android:name=".YeniRekalm.YeniReklamActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".Geofence.GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <!--
+           The API key for Google Maps-based APIs is defined as a string resource.
+           (See the file "res/values/google_maps_api.xml").
+           Note that the API key is linked to the encryption key used to sign the APK.
+           You need a different API key for each encryption key, including the release key that is used to
+           sign the APK for publishing.
+           You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".Geofence.MapsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.ActivityTeslimatAdresi"
+            android:exported="false" />
+        <activity
+            android:name=".activities.ActivityAdressDetail"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+        <meta-data
+            android:name="applovin.sdk.key"
+            android:value="@string/applovin_sdk_key" />
+
+        <activity
+            android:name=".activities.ActivitySplash"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activities.SignupActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activities.Kisisel_Bilgileri_Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="OPEN_MAIN_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.ActivityCategoryDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activities.ActivitySearch"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".activities.ActivitySettings"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activities.ActivityWebView"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activities.ActivityRecipesDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activities.ActivityNotificationDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activities.ActivityImageDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name=".activities.ActivityRedirect"
+            android:configChanges="orientation|keyboardHidden|screenSize" />
+
+        <service
+            android:name=".notification.MyFirebaseMessageService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_onesignal_default" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/color_light_accent" />
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCgLrCOeBkMBqbuvYCjbMIffZA5oTJ0gW8" />
+    </application>
+
+</manifest>

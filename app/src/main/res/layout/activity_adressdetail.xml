@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F4F4"
+    tools:context=".activities.ActivityAdressDetail">
+<LinearLayout
+    android:id="@+id/linear1"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+
+        android:layout_marginStart="5dp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adreslerinizi listeye ekleyebilirsin." />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:hint="Adresin Adı; Ör: Ev ,işYeri ,Ofis,Apratman vb "
+        android:drawablePadding="7dp"
+        android:textColor="@color/color_black"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+
+            android:id="@+id/et_telefon"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:hint="Ülke/Şehir"
+            android:drawablePadding="8dp"
+            android:textColor="@color/color_black"/>
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_mesajyaz"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_marginTop="5dp"
+        android:padding="8dp"
+        android:hint="tam adres detaylarını yazınız"
+        android:drawablePadding="8dp"
+        android:textColor="@color/color_black"/>
+
+    <Button
+        style="@style/AppTheme"
+        android:id="@+id/btn_listeyeekle"
+        android:layout_marginTop="5dp"
+        android:text="Yeni Adres'i Ekle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="#F4F4F4"
+        android:id="@+id/recyclerarkadasliste"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/RVemptyText"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:textColor="@color/color_black"
+        android:shadowColor="#090909"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="8"
+        android:text="Yeni adresleri ekleyebilirsin"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
