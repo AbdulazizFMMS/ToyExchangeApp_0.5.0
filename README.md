@@ -66,4 +66,4 @@ screenshots:
 
 <p><a href="https://drive.google.com/file/d/1J2P7Xh4MFgpBM6KMHmJ8D73TkaSar9c5/view?usp=sharing" target="_blank"><span style="font-size: large;">press Here to Download the APK file</span></a><br /></p><div id="gtx-trans" style="left: -168px; position: absolute; top: -20px;"><div class="gtx-trans-icon"></div></div>
 
-
+have a nice day
